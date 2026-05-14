@@ -5,7 +5,7 @@ import asyncio
 import os
 
 TOKEN = os.getenv("8915227053:AAF9T201HjWC-dkKY_aU3ooxSWFXHeNnXSc")
-CHAT_ID = os.getenv("+YZZ6ez9pYuk0OTQ0")
+CHAT_ID = os.getenv("-1003392815023")
 
 bot = Bot(token=TOKEN)
 
