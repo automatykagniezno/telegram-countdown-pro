@@ -4,8 +4,8 @@ from datetime import datetime
 import asyncio
 import os
 
-TOKEN = os.getenv("8915227053:AAF9T201HjWC-dkKY_aU3ooxSWFXHeNnXSc")
-CHAT_ID = os.getenv("-1003392815023")
+TOKEN = os.getenv("BOT_TOKEN")
+CHAT_ID = os.getenv("CHAT_ID")
 
 bot = Bot(token=TOKEN)
 
