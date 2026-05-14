@@ -4,12 +4,12 @@ from datetime import datetime
 import asyncio
 import os
 
-TOKEN = os.getenv("BOT_TOKEN")
-CHAT_ID = os.getenv("CHAT_ID")
+TOKEN = os.getenv("8915227053:AAF9T201HjWC-dkKY_aU3ooxSWFXHeNnXSc")
+CHAT_ID = os.getenv("+YZZ6ez9pYuk0OTQ0")
 
 bot = Bot(token=TOKEN)
 
-TARGET_DATE = datetime(2026, 6, 6, 0, 0, 0)
+TARGET_DATE = datetime(2026, 6, 6, 19, 0, 0)
 
 MESSAGE_FILE = "message.txt"
 
