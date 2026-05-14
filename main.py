@@ -45,14 +45,22 @@ async def create_message():
     save_message_id(message_id)
 
     try:
-        await bot.pin_chat_message(
-            chat_id=CHAT_ID,
-            message_id=message_id,
-            disable_notification=True
+        chat = await bot.get_chat(CHAT_ID)
+
+        already_pinned = (
+            chat.pinned_message
+            and chat.pinned_message.message_id == message_id
         )
+
+        if not already_pinned:
+            await bot.pin_chat_message(
+                chat_id=CHAT_ID,
+                message_id=message_id,
+                disable_notification=True
+            )
+
     except:
         pass
-
 
 async def update_countdown():
     global message_id
