@@ -77,7 +77,7 @@ async def update_countdown():
                 f"🕐 {hours} godzin\n"
                 f"⌛ {minutes} minut\n"
                 f"⚡ {seconds} sekund\n\n"
-                "🔥 Ekipa już odlicza..."
+                "🔥"
             )
 
         try:
